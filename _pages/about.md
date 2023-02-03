@@ -25,4 +25,4 @@ I am currently working on graph algorithms, applied to massive real-world networ
 
 Before my PhD, I graduated from [ENS Paris-Saclay](https://ens-paris-saclay.fr/) and [Sorbonne Université](https://www.sorbonne-universite.fr/)  with a master in computer science research and software technology.
 
-I am very interested in interdisciplinary work. I have done various works in bioinformatics, and I am particularly interested in using the rich formalism of graphs for biological studies that involve complex interactions.
+I am interested in interdisciplinary work. I have done various works in bioinformatics, and I am particularly interested in using the rich formalism of graphs for biological studies that involve complex interactions.
