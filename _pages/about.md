@@ -7,7 +7,7 @@ subtitle: alexis.baudin (at) lip6.fr
 profile:
   align: right
   image: my_pic_resized.jpeg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   address: >
     <p>LIP6</p>
     <p>Sorbonne Université</p>
@@ -23,6 +23,6 @@ I am a PhD student in the [Complex Networks](https://www.complexnetworks.fr/) te
 
 I am currently working on graph algorithms, applied to massive real-world networks. I also study temporal graphs, with the [link stream formalism](https://arxiv.org/abs/1710.04073), which allows to combine structural and temporal aspects of a dataset, taking into account the continuous aspect of time.
 
-Before my PhD, I graduated from [ENS Paris-Saclay](https://ens-paris-saclay.fr/) and [Sorbonne Université](https://www.sorbonne-universite.fr/)  with a master in computer science research and software science and technology.
+Before my PhD, I graduated from [ENS Paris-Saclay](https://ens-paris-saclay.fr/) and [Sorbonne Université](https://www.sorbonne-universite.fr/)  with a master in computer science research and software technology.
 
 I am very interested in interdisciplinary work. I have done various works in bioinformatics, and I am particularly interested in using the rich formalism of graphs for biological studies that involve complex interactions.

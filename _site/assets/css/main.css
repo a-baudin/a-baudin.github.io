@@ -89,6 +89,12 @@ body.sticky-bottom-footer {
 
 .profile img {
   width: 100%;
+  transition: 0.4s ease-in-out;
+}
+.profile img:hover {
+  transition: 0.4s ease-in-out;
+  transform: rotate(360deg);
+  box-shadow: 0 0 80px 40px black !important;
 }
 
 /******************************************************************************

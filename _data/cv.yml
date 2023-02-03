@@ -87,7 +87,7 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://gitlab.lip6.fr/baudin/maxcliques-linkstream">Maximal clique enumration in link streams.</a>
+    - title: <a href="https://gitlab.lip6.fr/baudin/maxcliques-linkstream">Maximal clique enumeration in link streams.</a>
       year: 2022
       description: 
         - List all the maximal cliques of an input link stream.
