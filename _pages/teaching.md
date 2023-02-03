@@ -11,7 +11,7 @@ nav_order: 5
 #### 2021, 2022, 2023: Algorithmics for Licences 2, at Sorbonne Université. 
 > - Course supervisor : [Alix Munier](https://www.lip6.fr/actualite/personnes-fiche.php?ident=P653).
 > - The objective of the course is:
->     - to evaluate and demonstrate the complexity and validity of an algorithm;
+>     - to learn how to evaluate and demonstrate the complexity and validity of an algorithm;
 >     - to work on basic classical algorithms:
 >         - on lists and arrays (sorting)
 >         - on classical data structures (heap, binary search tree, ...)
