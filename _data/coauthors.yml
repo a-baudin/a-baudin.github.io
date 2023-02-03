@@ -1,34 +1,27 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Kirgizov":
+  - firstname: ["Sergey"]
+    url: https://kirgizov.link/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Magnien":
+  - firstname: ["Clémence"]
+    url: https://lip6.fr/Clemence.Magnien/
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Tabourier":
+  - firstname: ["Lionel"]
+    url: https://lioneltabourier.fr/
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Pang":
+  - firstname: ["Jun"]
+    url: https://wwwfr.uni.lu/recherche/fstm/dcs/membres/jun_pang
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Zea":
+  - firstname: ["Diego Javier"]
+    url: https://diegozea.github.io/
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Richard":
+  - firstname: ["Hugues"]
+    url: http://www.lgm.upmc.fr/hrichard/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Laine":
+  - firstname: ["Élodie", "Elodie"]
+    url: http://www.lcqb.upmc.fr/laine/Home.html

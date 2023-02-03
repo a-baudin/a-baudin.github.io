@@ -1,92 +1,56 @@
----
----
+% ===========================
+% ---- Prépublications ---- %
+% ===========================
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{baudin2023faster,
+  title={Faster maximal clique enumeration in large real-world link streams},
+  author={Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},
+  journal={arXiv preprint arXiv:2302.00360},
+  year={2023},
+  month = Feb,
+  abbr={Arxiv},
+  pdf={https://arxiv.org/abs/2302.00360},
+  bibtex_show = {true},
+  selected = {true},
+  code = {https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
+  preprint={true},
+  abstract={Link streams offer a good model for representing interactions over time. They consist of links (b,e,u,v), where u and v are vertices interacting during the whole time interval [b,e]. In this paper, we deal with the problem of enumerating maximal cliques in link streams. A clique is a pair (C,[t0,t1]), where C is a set of vertices that all interact pairwise during the full interval [t0,t1]. It is maximal when neither its set of vertices nor its time interval can be increased. Some of the main works solving this problem are based on the famous Bron-Kerbosch algorithm for enumerating maximal cliques in graphs. We take this idea as a starting point to propose a new algorithm which matches the cliques of the instantaneous graphs formed by links existing at a given time t to the maximal cliques of the link stream. We prove its validity and compute its complexity, which is better than the state-of-the art ones in many cases of interest. We also study the output-sensitive complexity, which is close to the output size, thereby showing that our algorithm is efficient. To confirm this, we perform experiments on link streams used in the state of the art, and on massive link streams, up to 100 million links. In all cases our algorithm is faster, mostly by a factor of at least 10 and up to a factor of 104. Moreover, it scales to massive link streams for which the existing algorithms are not able to provide the solution.
+  }
 }
 
 
-% =====================================================
 
-% ---- Conférences internationales ----
+  
+
+
+% ====================================
+% ---- Conférences francophones ---- %
+% ====================================
+
+@article{baudin2023enumeration,
+  author    = {Alexis Baudin and Clémence Magnien and Lionel Tabourier},
+  title     = {Énumération efficace des cliques maximales dans les flots de liens réels massifs},
+  journal = {Revue des Nouvelles Technologies de l'Information},
+  volume = {Extraction et Gestion des Connaissances, RNTI-E-39},
+  year      = {2023},
+  pages     = {139-150},
+  month = Jan,
+  bibtex_show = {true},
+  pdf={https://editions-rnti.fr/?inprocid=1002817},
+  slides={slides-CliquesMaxLS.pdf},
+  selected = {true},
+  frconf = {true},
+  abbr = {EGC 2023},
+  code={https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
+  abstract ={Les flots de liens offrent un formalisme de description d'interactions au cours du temps. Un lien correspond à deux sommets qui interagissent sur un intervalle de temps. Une clique est un ensemble de sommets associé à un intervalle de temps durant lequel ils sont tous connectés. Elle est maximale si ni son ensemble de sommets ni son intervalle de temps ne peuvent être augmentés. Les algorithmes existants pour énumérer ces structures ne permettent pas de traiter des jeux de données réels de plus de quelques centaines de milliers d'interactions. Or, l'accès à des données toujours plus massives demande d'adapter les outils à de plus grandes échelles. Nous proposons alors un algorithme qui énumère les cliques maximales sur des réseaux temporels réels et massifs atteignant jusqu'à plus de 100 millions de liens. Nous montrons expérimentalement qu'il améliore l'état de l'art de plusieurs ordres de grandeur. }
+}
+
+
+
+
+% =======================================
+% ---- Conférences internationales ---- %
+% =======================================
 
 @inproceedings{baudin2022clique,
   title={Clique percolation method: memory efficient almost exact communities},
@@ -94,21 +58,43 @@
   booktitle={Advanced Data Mining and Applications: 17th International Conference, ADMA 2021, Sydney, NSW, Australia, February 2--4, 2022, Proceedings, Part II},
   pages={113--127},
   year={2022},
-  organization={Springer}
+  organization={Springer},
+  poster={poster-CPM.pdf},
+  slides={slides-CPM.pdf},
+  abbr = {ADMA 2021},
+  bibtex_show = {true},
+  pdf = {https://arxiv.org/abs/2110.01213},
+  selected = {true},
+  inconf = {true},
+  supp={https://gitlab.lip6.fr/baudin/cpm-supplementary-material},
+  code={https://gitlab.lip6.fr/baudin/cpm-cpmz},
+  abstract = {Automatic detection of relevant groups of nodes in large real-world graphs, i.e. community detection, has applications in many fields and has received a lot of attention in the last twenty years. The most popular method designed to find overlapping communities (where a node can belong to several communities) is perhaps the clique percolation method (CPM). This method formalizes the notion of community as a maximal union of k-cliques that can be reached from each other through a series of adjacent k-cliques, where two cliques are adjacent if and only if they overlap on k−1 nodes. Despite much effort CPM has not been scalable to large graphs for medium values of k.
+Recent work has shown that it is possible to efficiently list all k-cliques in very large real-world graphs for medium values of k. We build on top of this work and scale up CPM. In cases where this first algorithm faces memory limitations, we propose another algorithm, CPMZ, that provides a solution close to the exact one, using more time but less memory. 
+  }
 }
 
 
-% ---- Publications internationales ----
+% ========================================
+% ---- Publications internationales ---- %
+% ========================================
 
 @article{zea2021assessing,
   title={Assessing conservation of alternative splicing with evolutionary splicing graphs},
-  author={Zea, Diego Javier and Laskina, Sofya and Baudin, Alexis and Richard, Hugues and Laine, Elodie},
+  author={Zea, Diego Javier and Laskina, Sofya and Baudin, Alexis and Richard, Hugues and Laine, Élodie},
   journal={Genome Research},
   volume={31},
   number={8},
   pages={1462--1473},
   year={2021},
-  publisher={Cold Spring Harbor Lab}
+  publisher={Cold Spring Harbor Lab},
+  injournal={true},
+  bibtex_show = {true},
+  abbr = {Genome R.},
+  pdf = {https://genome.cshlp.org/content/31/8/1462.full},
+  code = {https://github.com/PhyloSofS-Team/thoraxe},
+  supp = {https://www.biorxiv.org/content/10.1101/2020.11.14.382820v3.supplementary-material},
+  abstract = {Understanding how protein function has evolved and diversified is of great importance for human genetics and medicine. Here, we tackle the problem of describing the whole transcript variability observed in several species by generalizing the definition of splicing graph. We provide a practical solution to construct parsimonious evolutionary splicing graphs where each node is a minimal transcript building block defined across species. We show a clear link between the functional relevance, tissue regulation, and conservation of alternative transcripts on a set of 50 genes. By scaling up to the whole human protein-coding genome, we identify a few thousand genes where alternative splicing modulates the number and composition of pseudorepeats. We have implemented our approach in ThorAxe, an efficient, versatile, robust, and freely available computational tool. 
+  }
 }
 
 @article{baudin2019controlling,
@@ -119,66 +105,27 @@
   number={14},
   pages={i558--i567},
   year={2019},
-  publisher={Oxford University Press}
-}
+  publisher={Oxford University Press},
+  injournal={true},
+  bibtex_show = {true},
+  abbr = {Bioinformatics},
+  pdf={https://academic.oup.com/bioinformatics/article/35/14/i558/5529125},
+  abstract={Motivation: The control of Boolean networks has traditionally focussed on strategies where the
+perturbations are applied to the nodes of the network for an extended period of time. In this work,
+we study if and how a Boolean network can be controlled by perturbing a minimal set of nodes for
+a single-step and letting the system evolve afterwards according to its original dynamics. More pre-
+cisely, given a Boolean network (BN), we compute a minimal subset Cmin of the nodes such that
+BN can be driven from any initial state in an attractor to another ‘desired’ attractor by perturbing
+some or all of the nodes of Cmin for a single-step. Such kind of control is attractive for biological
+systems because they are less time consuming than the traditional strategies for control while also
+being financially more viable. However, due to the phenomenon of state-space explosion, comput-
+ing such a minimal subset is computationally inefficient and an approach that deals with the entire
+network in one-go, does not scale well for large networks.
 
-% ---- Conférences francophones ----
-
-@proceedings{baudin-egc2023,
-  title = {{Énumération efficace des cliques maximales dans les flots de liens réels massifs}},
-  author = {Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},  booktitle = {{23ème conférence francophone sur l’extraction et la gestion de connaissances (EGC 2023)}},
-  address = {Lyon, France},
-  year = {2023},
-  month = Jan,
-  preview={cliques.png}
-}
-
-% ---- Prépublications ----
-
-@unpublished{baudin-jgaa2023,
-  title = {{Faster maximal clique enumeration in massive real-world link streams}},
-  author = {Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},
-  year = {2023},
-  month = Jan,
-  abbr={Arxiv}
-}
-
-% ---- Codes publics ----
-
-@software{gaelle_le_treut_2019_3403961,
-  author       = {Gaëlle Le Treut and
-                  Emmanuel Combet and
-                  Julien Lefèvre and
-                  Antoine Teixeira and
-                  Alexis Baudin},
-  title        = {{IMACLIM-Country platform : a country-scale 
-                   computable general equilibrium model}},
-  month        = sep,
-  year         = 2019,
-  publisher    = {Zenodo},
-  version      = {V1.1},
-  doi          = {10.5281/zenodo.3403961},
-  url          = {https://doi.org/10.5281/zenodo.3403961}
-}
-
-@software{baudin_cpm_2021,
-  author       = {Alexis Baudin and
-                  Maximilien Danisch and
-                  Sergey Kirgizov and
-                  Clémence Magnien and
-                  Marwan Ghanem},
-  title        = {{Clique percolation method: memory efficient almost exact communities}},
-  year         = 2021,
-  url          = {https://gitlab.lip6.fr/baudin/cpm-cpmz}
-}
-
-@software{baudin_cliquesLS_2023,
-  author       = {Alexis Baudin and
-                  Clémence Magnien and
-                  Lionel Tabourier},
-  title        = {{Faster maximal clique enumeration in massive real-world link streams}},
-  year         = 2022,
-  url          = {https://gitlab.lip6.fr/baudin/maxcliques-linkstream}
+Results: We develop a ‘divide-and-conquer’ approach by decomposing the network into smaller
+partitions, computing the minimal control on the projection of the attractors to these partitions and
+then composing the results to obtain Cmin for the whole network. We implement our method and
+test it on various real-life biological networks to demonstrate its applicability and efficiency.}
 }
 
 

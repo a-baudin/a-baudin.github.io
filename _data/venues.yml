@@ -1,6 +1,19 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"EGC 2023":
+  url: https://egc2023.sciencesconf.org/
+  color: "#d74f48"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ADMA 2021":
+  url: https://link.springer.com/book/10.1007/978-3-030-95408-6
+  color: "#1c46a0"
+
+"Genome R.":
+  url: https://genome.cshlp.org/
+  color: "#c12029"
+
+"Bioinformatics":
+  url: https://academic.oup.com/bioinformatics
+  color: "#0887ba"
+
+"Arxiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
