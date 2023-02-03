@@ -8,7 +8,7 @@
     - name: Languages
       value: French, English, Spanish
 
-- title: Education
+- title: Education -- École normale supérieure Paris-Saclay
   type: time_table
   contents:
     - title: Master 2, Software Science and Technology.
@@ -32,7 +32,7 @@
   type: time_table
   contents:
     - title: PhD in graph algorithmic.
-      institution: LIP6, Sorbonne Université, Paris.
+      institution: LIP6, Sorbonne Université, CNRS, Paris.
       year: 2020 - NOW
       description:
         - Enumeration problems in massive graphs and applications.
@@ -43,7 +43,7 @@
         #     - Sub-description 2.
 
     - title: Internship of end of Master 2 in computer science.
-      institution: LIP6, Sorbonne Université, Paris
+      institution: LIP6, Sorbonne Université, CNRS, Paris
       year: 2020
       description:
         - 6 months.
