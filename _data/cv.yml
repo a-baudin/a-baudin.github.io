@@ -8,26 +8,6 @@
     - name: Languages
       value: French, English, Spanish
 
-- title: Education -- École normale supérieure Paris-Saclay
-  type: time_table
-  contents:
-    - title: Master 2, Software Science and Technology.
-      institution: Sorbonne Université, Paris.
-      year: 2019 - 2020
-      description:
-
-    - title: Master 2, Environment, Energy and Transport Economics.
-      institution: AgroParisTech, Paris.
-      year: 2018 - 2019
-
-    - title: Master 1, Master Jacques Herbrand of research in computer science.
-      institution: École normale supérieure Paris-Saclay, Cachan.
-      year: 2017 - 2018
-
-    - title: License 3, fundamental computer science.
-      institution: École normale supérieure Paris-Saclay, Cachan.
-      year: 2016 - 2017
-
 - title: Experience in research
   type: time_table
   contents:
@@ -74,6 +54,26 @@
         - Boolean network attractors computation by ASP logic programming.
         - Supervised by Jacques Nicolas.
 
+- title: Education -- École normale supérieure Paris-Saclay
+  type: time_table
+  contents:
+    - title: Master 2, Software Science and Technology.
+      institution: Sorbonne Université, Paris.
+      year: 2019 - 2020
+      description:
+
+    - title: Master 2, Environment, Energy and Transport Economics.
+      institution: AgroParisTech, Paris.
+      year: 2018 - 2019
+
+    - title: Master 1, Master Jacques Herbrand of research in computer science.
+      institution: École normale supérieure Paris-Saclay, Cachan.
+      year: 2017 - 2018
+
+    - title: License 3, fundamental computer science.
+      institution: École normale supérieure Paris-Saclay, Cachan.
+      year: 2016 - 2017
+
 - title: Teaching
   type: time_table
   contents:
@@ -87,6 +87,12 @@
 - title: Open Source Projects
   type: time_table
   contents:
+    - title: <a href="https://gitlab.lip6.fr/baudin/lscpm">Community detection in link streams.</a>
+      year: 2023
+      description: 
+        - Output a set of communities of an input link stream, by clique percolation method.
+        - <a href="https://arxiv.org/abs/2308.10801">Associated paper</a>.
+
     - title: <a href="https://gitlab.lip6.fr/baudin/maxcliques-linkstream">Maximal clique enumeration in link streams.</a>
       year: 2022
       description: 

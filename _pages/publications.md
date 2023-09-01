@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: All publications
 description: Publications by categories in reversed chronological order. 
-inconf: [2022]
+inconf: [2023,2022]
 injournal: [2021,2019]
 frconf: [2023]
 preprint: [2023]
