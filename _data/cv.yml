@@ -11,12 +11,20 @@
 - title: Experience in research
   type: time_table
   contents:
+    - title: Postdoctorate.
+      institution: LIP6, Sorbonne Université, CNRS, Paris.
+      year: 2024
+      description:
+        - Anomaly detection and their structural impact on mobility networks.
+        - Algorithmic modeling of infrastructure network blocking.
+        - Supervised by Matthieu Latapy.
     - title: PhD in graph algorithmic.
       institution: LIP6, Sorbonne Université, CNRS, Paris.
-      year: 2020 - NOW
+      year: 2020 - 2023
       description:
-        - Enumeration problems in massive graphs and applications.
+        - Titled "Static and temporal cliques, enumeration and community detection algorithms".
         - Supervised by Clémence Magnien and Lionel Tabourier.
+        - Defended on December 14, 2023.
         # - title: Description 3.
         #   contents:
         #     - Sub-description 1.
