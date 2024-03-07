@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: During my PhD, I teach for two courses.
+description: During my PhD, I taught for two courses.
 nav: true
 nav_order: 5
 ---
