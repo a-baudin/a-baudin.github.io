@@ -1,3 +1,22 @@
+% ===========================
+% ---- Manuscrit thèse ---- %
+% ===========================
+
+@phdthesis{baudin2023cliques,
+  title={Cliques statiques et temporelles: algorithmes d'{\'e}num{\'e}ration et de d{\'e}tection de communaut{\'e}s},
+  author={Baudin, Alexis},
+  year={2023},
+  month=December,
+  school={Sorbonne Universit{\'e}},
+  bibtex_show = {true},
+  phdmanuscript={true},
+  abbr={Theses},
+  website={https://theses.fr/2023SORUS609},
+  pdf={140891_BAUDIN_2023_archivage.pdf},
+  selected = {true},
+  abstract={Les graphes sont des objets mathématiques qui permettent de modéliser des interactions ou connexions entre entités de types variés. Un graphe peut représenter par exemple un réseau social qui connecte les utilisateurs entre eux, un réseau de transport comme le métro où les stations sont connectées entre elles, ou encore un cerveau avec les milliards de neurones en interaction qu'il contient. Depuis quelques années, la forte dynamicité de ces structures a été mise en évidence, ainsi que l'importance de prendre en compte l'évolution temporelle de ces réseaux pour en comprendre le fonctionnement. Alors que de nombreux concepts et algorithmes ont été développés sur les graphes pour décrire des structures de réseaux statiques, il reste encore beaucoup à faire pour formaliser et développer des algorithmes pertinents pour décrire la dynamique des réseaux réels. Cette thèse vise à mieux comprendre comment sont structurés les graphes massifs qui sont issus du monde réel et à développer des outils pour étendre notre compréhension à des structures évoluant dans le temps. Il a été montré que ces graphes ont des propriétés particulières, qui les distinguent des graphes théoriques ou tirés aléatoirement. Exploiter ces propriétés permet alors de concevoir des algorithmes pour résoudre certains problèmes difficiles beaucoup plus rapidement sur ces instances que dans le cas général. La thèse se focalise sur les cliques, qui sont des groupes d'éléments tous connectés entre eux. Nous étudions l'énumération des cliques dans les graphes statiques et temporels et la détection de communautés qu'elles permettent de mettre en œuvre. Les communautés d'un graphe sont des ensembles de sommets tels qu'au sein d'une communauté, les sommets interagissent fortement entre eux, et peu avec le reste du graphe. Leur étude aide à comprendre les propriétés structurelles et fonctionnelles des réseaux. Nous évaluons nos algorithmes sur des graphes massifs issus du monde réel, ouvrant ainsi de nouvelles perspectives pour comprendre les interactions au sein de ces réseaux. Nous travaillons d'abord sur des graphes, sans tenir compte de la composante temporelle des interactions. Nous commençons par utiliser la méthode de détection de communautés par percolation de cliques, en mettant en évidence ses limites en mémoire, qui empêchent de l'appliquer à des graphes trop massifs. En introduisant un algorithme de résolution approchée du problème, nous dépassons cette limite. Puis, nous améliorons l'énumération des cliques maximales dans le cas des graphes particuliers dits bipartis. Ils correspondent à des interactions entre des groupes de sommets de type différent, par exemple des liens entre des personnes et du contenu consulté, la participation à des événements, etc. Ensuite, nous considérons des interactions qui ont lieu au cours du temps, grâce au formalisme des flots de liens. Nous cherchons à étendre les algorithmes présentés en première partie, pour exploiter leurs avantages dans l'étude des interactions temporelles. Nous fournissons un nouvel algorithme d'énumération des cliques maximales dans les flots de liens, beaucoup plus efficace que l'état de l'art sur des jeux de données massifs. Enfin, nous nous intéressons aux communautés dans les flots de liens par percolation de cliques, en développant une extension de la méthode utilisée sur les graphes. Les résultats montrent une amélioration significative par rapport à l'état de l'art, et nous analysons les communautés obtenues pour fournir des informations pertinentes sur l'organisation des interactions temporelles dans les flots de liens. Mon travail de thèse a permis d’apporter de nouvelles réflexions sur l’étude des réseaux massifs issus du monde réel. Cela montre l'importance d'explorer le potentiel des graphes dans un contexte réel, et pourrait contribuer à l'émergence de solutions novatrices pour les défis complexes de notre société moderne.}
+}
+
 % =======================================
 % ---- Conférences internationales ---- %
 % =======================================
@@ -33,6 +52,7 @@ However, existing implementations are unable to handle massive datasets. We pres
   bibtex_show = {true},
   website = {https://arxiv.org/abs/2110.01213},
   pdf={baudin2021clique.pdf},
+  selected = {false},
   inconf = {true},
   supp={https://gitlab.lip6.fr/baudin/cpm-supplementary-material},
   code={https://gitlab.lip6.fr/baudin/cpm-cpmz},
@@ -81,7 +101,7 @@ Recent work has shown that it is possible to efficiently list all k-cliques in v
   website={https://editions-rnti.fr/?inprocid=1002817},
   pdf={baudin2023enumeration.pdf},
   slides={slides-CliquesMaxLS.pdf},
-  selected = {true},
+  selected = {false},
   frconf = {true},
   abbr = {EGC 2023},
   code={https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
@@ -106,6 +126,7 @@ Recent work has shown that it is possible to efficiently list all k-cliques in v
   abbr = {Genome R.},
   website = {https://genome.cshlp.org/content/31/8/1462.full},
   pdf={zea2021assessing.pdf},
+  selected = {false},
   code = {https://github.com/PhyloSofS-Team/thoraxe},
   supp = {https://www.biorxiv.org/content/10.1101/2020.11.14.382820v3.supplementary-material},
   abstract = {Understanding how protein function has evolved and diversified is of great importance for human genetics and medicine. Here, we tackle the problem of describing the whole transcript variability observed in several species by generalizing the definition of splicing graph. We provide a practical solution to construct parsimonious evolutionary splicing graphs where each node is a minimal transcript building block defined across species. We show a clear link between the functional relevance, tissue regulation, and conservation of alternative transcripts on a set of 50 genes. By scaling up to the whole human protein-coding genome, we identify a few thousand genes where alternative splicing modulates the number and composition of pseudorepeats. We have implemented our approach in ThorAxe, an efficient, versatile, robust, and freely available computational tool. 
@@ -126,6 +147,7 @@ Recent work has shown that it is possible to efficiently list all k-cliques in v
   abbr = {Bioinformatics},
   website={https://academic.oup.com/bioinformatics/article/35/14/i558/5529125},
   pdf={baudin2019controlling.pdf},
+  selected = {false},
   abstract={Motivation: The control of Boolean networks has traditionally focussed on strategies where the
 perturbations are applied to the nodes of the network for an extended period of time. In this work,
 we study if and how a Boolean network can be controlled by perturbing a minimal set of nodes for
@@ -143,5 +165,8 @@ partitions, computing the minimal control on the projection of the attractors to
 then composing the results to obtain Cmin for the whole network. We implement our method and
 test it on various real-life biological networks to demonstrate its applicability and efficiency.}
 }
+
+
+
 
 

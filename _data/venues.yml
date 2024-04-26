@@ -21,3 +21,7 @@
 "TIME 2023":
   url: "https://time-symposium.org/t/index.php"
   color: "#7d1343"
+
+"Theses":
+  url: "https://theses.fr"
+  color: "#00a0dc"

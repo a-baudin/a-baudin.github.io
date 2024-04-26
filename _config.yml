@@ -8,7 +8,7 @@ middle_name:
 last_name: Baudin
 email: alexis.baudin@lip6.fr
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Alexis Baudin, PhD Student in Complex Networks at LIP 6, Sorbonne Université
+  Alexis Baudin, Post-doctoral researcher in Complex Networks at LIP 6, Sorbonne Université
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -277,7 +277,7 @@ badges: # Display different badges for your pulications
   dimensions_badge: true # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, code, bibtex_show, html, pdf, selected, supp, blog, poster, slides, website, preview, altmetric, injournal, preprint, inconf, frconf]
+filtered_bibtex_keywords: [abbr, abstract, arxiv, code, bibtex_show, html, pdf, selected, supp, blog, poster, slides, website, preview, altmetric, injournal, preprint, inconf, frconf, phdmanuscript]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit:  # leave blank to always show all authors

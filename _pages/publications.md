@@ -7,6 +7,7 @@ inconf: [2023,2022]
 injournal: [2021,2019]
 frconf: [2023]
 preprint: [2023]
+phdmanuscript: [2023]
 nav: true
 nav_order: 1
 ---
@@ -43,5 +44,13 @@ nav_order: 1
   {% bibliography -f papers -q @*[year={{y}} && frconf = true]%}
 {% endfor %}
 
-</div>
+<h2>PhD manuscript</h2>
 
+{%- for y in page.phdmanuscript %}
+
+  <h2 class="year">{{y}}</h2>
+
+  {% bibliography -f papers -q @*[year={{y}} && phdmanuscript = true]%}
+{% endfor %}
+
+</div>
