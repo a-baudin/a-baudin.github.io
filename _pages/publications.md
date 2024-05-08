@@ -6,7 +6,7 @@ description: Publications by categories in reversed chronological order.
 inconf: [2023,2022]
 injournal: [2021,2019]
 frconf: [2023]
-preprint: [2023]
+preprint: [2024,2023]
 phdmanuscript: [2023]
 nav: true
 nav_order: 1

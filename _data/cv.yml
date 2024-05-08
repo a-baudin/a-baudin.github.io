@@ -95,6 +95,11 @@
 - title: Open Source Projects
   type: time_table
   contents:
+    - title: <a href="https://gitlab.lip6.fr/baudin/bbk">Maximal biclique enumeration in bipartite graphs.</a>
+      year: 2024
+      description:
+        - List all the maximal bicliques of an input bipartite graph
+        - <a href="https://arxiv.org/abs/2405.04428">Associated paper</a>.
     - title: <a href="https://gitlab.lip6.fr/baudin/lscpm">Community detection in link streams.</a>
       year: 2023
       description: 

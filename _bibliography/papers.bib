@@ -1,4 +1,44 @@
 % ===========================
+% ---- Prépublications ---- %
+% ===========================
+
+@article{baudin2023faster,
+  title={Faster maximal clique enumeration in large real-world link streams},
+  author={Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},
+  journal={arXiv preprint arXiv:2302.00360},
+  year={2023},
+  month = Feb,
+  abbr={Arxiv},
+  website={https://arxiv.org/abs/2302.00360},
+  pdf={baudin2023faster.pdf},
+  slides={slides_maxcliqueLS_english.pdf},
+  bibtex_show = {true},
+  code = {https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
+  preprint={true},
+  abstract={Link streams offer a good model for representing interactions over time. They consist of links (b,e,u,v), where u and v are vertices interacting during the whole time interval [b,e]. In this paper, we deal with the problem of enumerating maximal cliques in link streams. A clique is a pair (C,[t0,t1]), where C is a set of vertices that all interact pairwise during the full interval [t0,t1]. It is maximal when neither its set of vertices nor its time interval can be increased. Some of the main works solving this problem are based on the famous Bron-Kerbosch algorithm for enumerating maximal cliques in graphs. We take this idea as a starting point to propose a new algorithm which matches the cliques of the instantaneous graphs formed by links existing at a given time t to the maximal cliques of the link stream. We prove its validity and compute its complexity, which is better than the state-of-the art ones in many cases of interest. We also study the output-sensitive complexity, which is close to the output size, thereby showing that our algorithm is efficient. To confirm this, we perform experiments on link streams used in the state of the art, and on massive link streams, up to 100 million links. In all cases our algorithm is faster, mostly by a factor of at least 10 and up to a factor of 104. Moreover, it scales to massive link streams for which the existing algorithms are not able to provide the solution.
+  }
+}
+
+@article{baudin2024simpler,
+  title={A simpler, faster algorithm for enumerating maximal bicliques in large sparse bipartite graphs},
+  author={Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},
+  journal={arXiv preprint arXiv:2405.04428},
+  year={2024},
+  month = {May},
+  keywords={preprint},
+  abbr={Arxiv},
+  website={https://arxiv.org/abs/2405.04428},
+  pdf={baudin2024simpler.pdf},
+  bibtex_show = {true},
+  selected = {true},
+  code = {https://gitlab.lip6.fr/baudin/bbk},
+  preprint={true},
+  abstract={Bipartite graphs are a prevalent modeling tool for real-world networks, capturing interactions between vertices of two different types. Within this framework, bicliques emerge as crucial structures when studying dense subgraphs: they are sets of vertices such that all vertices of the first type interact with all vertices of the second type. Therefore, they allow identifying groups of closely related vertices of the network, such as individuals with similar interests or webpages with similar contents. This article introduces a new algorithm designed for the exhaustive enumeration of maximal bicliques within a bipartite graph. This algorithm, called BBK for Bipartite Bron-Kerbosch, is a new extension to the bipartite case of the Bron-Kerbosch algorithm, which enumerates the maximal cliques in standard (non-bipartite) graphs. It is faster than the state-of-the-art algorithms and allows the enumeration on massive bipartite graphs that are not manageable with existing implementations. We analyze it theoretically to establish two complexity formulas: one as a function of the input and one as a function of the output characteristics of the algorithm. We also provide an open-access implementation of BBK in C++, which we use to experiment and validate its efficiency on massive real-world datasets and show that its execution time is shorter in practice than state-of-the art algorithms. These experiments also show that the order in which the vertices are processed, as well as the choice of one of the two types of vertices on which to initiate the enumeration have an impact on the computation time. 
+  }
+}
+
+
+% ===========================
 % ---- Manuscrit thèse ---- %
 % ===========================
 
@@ -61,29 +101,6 @@ However, existing implementations are unable to handle massive datasets. We pres
 Recent work has shown that it is possible to efficiently list all k-cliques in very large real-world graphs for medium values of k. We build on top of this work and scale up CPM. In cases where this first algorithm faces memory limitations, we propose another algorithm, CPMZ, that provides a solution close to the exact one, using more time but less memory. 
   }
 }
-
-% ===========================
-% ---- Prépublications ---- %
-% ===========================
-
-@article{baudin2023faster,
-  title={Faster maximal clique enumeration in large real-world link streams},
-  author={Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},
-  journal={arXiv preprint arXiv:2302.00360},
-  year={2023},
-  month = Feb,
-  abbr={Arxiv},
-  website={https://arxiv.org/abs/2302.00360},
-  pdf={baudin2023faster.pdf},
-  bibtex_show = {true},
-  selected = {true},
-  code = {https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
-  preprint={true},
-  abstract={Link streams offer a good model for representing interactions over time. They consist of links (b,e,u,v), where u and v are vertices interacting during the whole time interval [b,e]. In this paper, we deal with the problem of enumerating maximal cliques in link streams. A clique is a pair (C,[t0,t1]), where C is a set of vertices that all interact pairwise during the full interval [t0,t1]. It is maximal when neither its set of vertices nor its time interval can be increased. Some of the main works solving this problem are based on the famous Bron-Kerbosch algorithm for enumerating maximal cliques in graphs. We take this idea as a starting point to propose a new algorithm which matches the cliques of the instantaneous graphs formed by links existing at a given time t to the maximal cliques of the link stream. We prove its validity and compute its complexity, which is better than the state-of-the art ones in many cases of interest. We also study the output-sensitive complexity, which is close to the output size, thereby showing that our algorithm is efficient. To confirm this, we perform experiments on link streams used in the state of the art, and on massive link streams, up to 100 million links. In all cases our algorithm is faster, mostly by a factor of at least 10 and up to a factor of 104. Moreover, it scales to massive link streams for which the existing algorithms are not able to provide the solution.
-  }
-}
-
-
 
 
 % ====================================
