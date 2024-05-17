@@ -104,15 +104,15 @@
       year: 2023
       description: 
         - Output a set of communities of an input link stream, by clique percolation method.
-        - <a href="https://arxiv.org/abs/2308.10801">Associated paper</a>.
+        - <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.TIME.2023.3">Associated paper</a>.
 
     - title: <a href="https://gitlab.lip6.fr/baudin/maxcliques-linkstream">Maximal clique enumeration in link streams.</a>
       year: 2022
       description: 
         - List all the maximal cliques of an input link stream.
-        - <a href="https://arxiv.org/abs/2302.00360">Associated paper</a>.
+        - <a href="https://jgaa.info/index.php/jgaa/article/view/2932">Associated paper</a>.
 
-    - title: <a href="https://gitlab.lip6.fr/baudin/maxcliques-linkstream">Community extraction in graphs by clique percolation method.</a>
+    - title: <a href="https://gitlab.lip6.fr/baudin/cpm-cpmz">Community extraction in graphs by clique percolation method.</a>
       year: 2021
       description: 
         - List communities of an input graph, by k-clique percolation method.

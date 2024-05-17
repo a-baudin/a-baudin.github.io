@@ -1,134 +1,27 @@
-% ===========================
-% ---- Prépublications ---- %
-% ===========================
-
-@article{baudin2023faster,
-  title={Faster maximal clique enumeration in large real-world link streams},
-  author={Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},
-  journal={arXiv preprint arXiv:2302.00360},
-  year={2023},
-  month = Feb,
-  abbr={Arxiv},
-  website={https://arxiv.org/abs/2302.00360},
-  pdf={baudin2023faster.pdf},
-  slides={slides_maxcliqueLS_english.pdf},
-  bibtex_show = {true},
-  code = {https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
-  preprint={true},
-  abstract={Link streams offer a good model for representing interactions over time. They consist of links (b,e,u,v), where u and v are vertices interacting during the whole time interval [b,e]. In this paper, we deal with the problem of enumerating maximal cliques in link streams. A clique is a pair (C,[t0,t1]), where C is a set of vertices that all interact pairwise during the full interval [t0,t1]. It is maximal when neither its set of vertices nor its time interval can be increased. Some of the main works solving this problem are based on the famous Bron-Kerbosch algorithm for enumerating maximal cliques in graphs. We take this idea as a starting point to propose a new algorithm which matches the cliques of the instantaneous graphs formed by links existing at a given time t to the maximal cliques of the link stream. We prove its validity and compute its complexity, which is better than the state-of-the art ones in many cases of interest. We also study the output-sensitive complexity, which is close to the output size, thereby showing that our algorithm is efficient. To confirm this, we perform experiments on link streams used in the state of the art, and on massive link streams, up to 100 million links. In all cases our algorithm is faster, mostly by a factor of at least 10 and up to a factor of 104. Moreover, it scales to massive link streams for which the existing algorithms are not able to provide the solution.
-  }
-}
-
-@article{baudin2024simpler,
-  title={A simpler, faster algorithm for enumerating maximal bicliques in large sparse bipartite graphs},
-  author={Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},
-  journal={arXiv preprint arXiv:2405.04428},
-  year={2024},
-  month = {May},
-  keywords={preprint},
-  abbr={Arxiv},
-  website={https://arxiv.org/abs/2405.04428},
-  pdf={baudin2024simpler.pdf},
-  bibtex_show = {true},
-  selected = {true},
-  code = {https://gitlab.lip6.fr/baudin/bbk},
-  preprint={true},
-  abstract={Bipartite graphs are a prevalent modeling tool for real-world networks, capturing interactions between vertices of two different types. Within this framework, bicliques emerge as crucial structures when studying dense subgraphs: they are sets of vertices such that all vertices of the first type interact with all vertices of the second type. Therefore, they allow identifying groups of closely related vertices of the network, such as individuals with similar interests or webpages with similar contents. This article introduces a new algorithm designed for the exhaustive enumeration of maximal bicliques within a bipartite graph. This algorithm, called BBK for Bipartite Bron-Kerbosch, is a new extension to the bipartite case of the Bron-Kerbosch algorithm, which enumerates the maximal cliques in standard (non-bipartite) graphs. It is faster than the state-of-the-art algorithms and allows the enumeration on massive bipartite graphs that are not manageable with existing implementations. We analyze it theoretically to establish two complexity formulas: one as a function of the input and one as a function of the output characteristics of the algorithm. We also provide an open-access implementation of BBK in C++, which we use to experiment and validate its efficiency on massive real-world datasets and show that its execution time is shorter in practice than state-of-the art algorithms. These experiments also show that the order in which the vertices are processed, as well as the choice of one of the two types of vertices on which to initiate the enumeration have an impact on the computation time. 
-  }
-}
-
-
-% ===========================
-% ---- Manuscrit thèse ---- %
-% ===========================
-
-@phdthesis{baudin2023cliques,
-  title={Cliques statiques et temporelles: algorithmes d'{\'e}num{\'e}ration et de d{\'e}tection de communaut{\'e}s},
-  author={Baudin, Alexis},
-  year={2023},
-  month=December,
-  school={Sorbonne Universit{\'e}},
-  bibtex_show = {true},
-  phdmanuscript={true},
-  abbr={Theses},
-  website={https://theses.fr/2023SORUS609},
-  pdf={140891_BAUDIN_2023_archivage.pdf},
-  slides={soutenance.pdf},
-  selected = {true},
-  abstract={Les graphes sont des objets mathématiques qui permettent de modéliser des interactions ou connexions entre entités de types variés. Un graphe peut représenter par exemple un réseau social qui connecte les utilisateurs entre eux, un réseau de transport comme le métro où les stations sont connectées entre elles, ou encore un cerveau avec les milliards de neurones en interaction qu'il contient. Depuis quelques années, la forte dynamicité de ces structures a été mise en évidence, ainsi que l'importance de prendre en compte l'évolution temporelle de ces réseaux pour en comprendre le fonctionnement. Alors que de nombreux concepts et algorithmes ont été développés sur les graphes pour décrire des structures de réseaux statiques, il reste encore beaucoup à faire pour formaliser et développer des algorithmes pertinents pour décrire la dynamique des réseaux réels. Cette thèse vise à mieux comprendre comment sont structurés les graphes massifs qui sont issus du monde réel et à développer des outils pour étendre notre compréhension à des structures évoluant dans le temps. Il a été montré que ces graphes ont des propriétés particulières, qui les distinguent des graphes théoriques ou tirés aléatoirement. Exploiter ces propriétés permet alors de concevoir des algorithmes pour résoudre certains problèmes difficiles beaucoup plus rapidement sur ces instances que dans le cas général. La thèse se focalise sur les cliques, qui sont des groupes d'éléments tous connectés entre eux. Nous étudions l'énumération des cliques dans les graphes statiques et temporels et la détection de communautés qu'elles permettent de mettre en œuvre. Les communautés d'un graphe sont des ensembles de sommets tels qu'au sein d'une communauté, les sommets interagissent fortement entre eux, et peu avec le reste du graphe. Leur étude aide à comprendre les propriétés structurelles et fonctionnelles des réseaux. Nous évaluons nos algorithmes sur des graphes massifs issus du monde réel, ouvrant ainsi de nouvelles perspectives pour comprendre les interactions au sein de ces réseaux. Nous travaillons d'abord sur des graphes, sans tenir compte de la composante temporelle des interactions. Nous commençons par utiliser la méthode de détection de communautés par percolation de cliques, en mettant en évidence ses limites en mémoire, qui empêchent de l'appliquer à des graphes trop massifs. En introduisant un algorithme de résolution approchée du problème, nous dépassons cette limite. Puis, nous améliorons l'énumération des cliques maximales dans le cas des graphes particuliers dits bipartis. Ils correspondent à des interactions entre des groupes de sommets de type différent, par exemple des liens entre des personnes et du contenu consulté, la participation à des événements, etc. Ensuite, nous considérons des interactions qui ont lieu au cours du temps, grâce au formalisme des flots de liens. Nous cherchons à étendre les algorithmes présentés en première partie, pour exploiter leurs avantages dans l'étude des interactions temporelles. Nous fournissons un nouvel algorithme d'énumération des cliques maximales dans les flots de liens, beaucoup plus efficace que l'état de l'art sur des jeux de données massifs. Enfin, nous nous intéressons aux communautés dans les flots de liens par percolation de cliques, en développant une extension de la méthode utilisée sur les graphes. Les résultats montrent une amélioration significative par rapport à l'état de l'art, et nous analysons les communautés obtenues pour fournir des informations pertinentes sur l'organisation des interactions temporelles dans les flots de liens. Mon travail de thèse a permis d’apporter de nouvelles réflexions sur l’étude des réseaux massifs issus du monde réel. Cela montre l'importance d'explorer le potentiel des graphes dans un contexte réel, et pourrait contribuer à l'émergence de solutions novatrices pour les défis complexes de notre société moderne.}
-}
-
-% =======================================
-% ---- Conférences internationales ---- %
-% =======================================
-
-@inproceedings{baudin2023lscpm,
-  title={LSCPM: communities in massive real-world Link Streams by Clique Percolation Method},
-  author={Baudin, Alexis and Tabourier, Lionel and Magnien, Cl{\'e}mence},
-  booktitle={30th International Symposium on Temporal Representation and Reasoning, TIME 2023},
-  year={2023},
-  month = September,
-  abbr = {TIME 2023},
-  bibtex_show = {true},
-  website = {https://arxiv.org/abs/2308.10801},
-  pdf = {baudin2023lscpm.pdf},
-  selected = {true},
-  inconf = {true},
-  code = {https://gitlab.lip6.fr/baudin/lscpm},
-  slides= {Alexis-Baudin-LSCPM.pdf},
-  abstract = {Community detection is a popular approach to understand the organization of interactions in static networks. For that purpose, the Clique Percolation Method (CPM), which involves the percolation of k-cliques, is a well-studied technique that offers several advantages. Besides, studying interactions that occur over time is useful in various contexts, which can be modeled by the link stream formalism. The Dynamic Clique Percolation Method (DCPM) has been proposed for extending CPM to temporal networks.
-However, existing implementations are unable to handle massive datasets. We present a novel algorithm that adapts CPM to link streams, which has the advantage that it allows us to speed up the computation time with respect to the existing DCPM method. We evaluate it experimentally on real datasets and show that it scales to massive link streams. For example, it allows to obtain a complete set of communities in under twenty-five minutes for a dataset with thirty million links, what the state of the art fails to achieve even after a week of computation. We further show that our method provides communities similar to DCPM, but slightly more aggregated. We exhibit the relevance of the obtained communities in real world cases, and show that they provide information on the importance of vertices in the link streams. }
-}
-
-@inproceedings{baudin2022clique,
-  title={Clique percolation method: memory efficient almost exact communities},
-  author={Baudin, Alexis and Danisch, Maximilien and Kirgizov, Sergey and Magnien, Cl{\'e}mence and Ghanem, Marwan},
-  booktitle={Advanced Data Mining and Applications: 17th International Conference, ADMA 2021, Sydney, NSW, Australia, February 2--4, 2022, Proceedings, Part II},
-  pages={113--127},
-  year={2022},
-  organization={Springer},
-  poster={poster-CPM.pdf},
-  slides={slides-CPM.pdf},
-  abbr = {ADMA 2021},
-  bibtex_show = {true},
-  website = {https://arxiv.org/abs/2110.01213},
-  pdf={baudin2021clique.pdf},
-  selected = {false},
-  inconf = {true},
-  supp={https://gitlab.lip6.fr/baudin/cpm-supplementary-material},
-  code={https://gitlab.lip6.fr/baudin/cpm-cpmz},
-  abstract = {Automatic detection of relevant groups of nodes in large real-world graphs, i.e. community detection, has applications in many fields and has received a lot of attention in the last twenty years. The most popular method designed to find overlapping communities (where a node can belong to several communities) is perhaps the clique percolation method (CPM). This method formalizes the notion of community as a maximal union of k-cliques that can be reached from each other through a series of adjacent k-cliques, where two cliques are adjacent if and only if they overlap on k−1 nodes. Despite much effort CPM has not been scalable to large graphs for medium values of k.
-Recent work has shown that it is possible to efficiently list all k-cliques in very large real-world graphs for medium values of k. We build on top of this work and scale up CPM. In cases where this first algorithm faces memory limitations, we propose another algorithm, CPMZ, that provides a solution close to the exact one, using more time but less memory. 
-  }
-}
-
-
-% ====================================
-% ---- Conférences francophones ---- %
-% ====================================
-
-@inproceedings{baudin2023enumeration,
-  author    = {Alexis Baudin and Clémence Magnien and Lionel Tabourier},
-  title     = {Énumération efficace des cliques maximales dans les flots de liens réels massifs},
-  booktitle = {Extraction et Gestion des Connaissances, EGC 2023},
-  volume = {Extraction et Gestion des Connaissances, RNTI-E-39},
-  year      = {2023},
-  pages     = {139-150},
-  month = Jan,
-  bibtex_show = {true},
-  website={https://editions-rnti.fr/?inprocid=1002817},
-  pdf={baudin2023enumeration.pdf},
-  slides={slides-CliquesMaxLS.pdf},
-  selected = {false},
-  frconf = {true},
-  abbr = {EGC 2023},
-  code={https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
-  abstract ={Les flots de liens offrent un formalisme de description d'interactions au cours du temps. Un lien correspond à deux sommets qui interagissent sur un intervalle de temps. Une clique est un ensemble de sommets associé à un intervalle de temps durant lequel ils sont tous connectés. Elle est maximale si ni son ensemble de sommets ni son intervalle de temps ne peuvent être augmentés. Les algorithmes existants pour énumérer ces structures ne permettent pas de traiter des jeux de données réels de plus de quelques centaines de milliers d'interactions. Or, l'accès à des données toujours plus massives demande d'adapter les outils à de plus grandes échelles. Nous proposons alors un algorithme qui énumère les cliques maximales sur des réseaux temporels réels et massifs atteignant jusqu'à plus de 100 millions de liens. Nous montrons expérimentalement qu'il améliore l'état de l'art de plusieurs ordres de grandeur. }
-}
-
 % ========================================
 % ---- Publications internationales ---- %
 % ========================================
+
+@article{baudin2024faster,
+  title={Faster maximal clique enumeration in large real-world link streams},
+  author={Baudin, Alexis and Magnien, Clémence and Tabourier, Lionel},
+  volume={28},
+  DOI={10.7155/jgaa.v28i1.2932},
+  number={1},
+  journal={Journal of Graph Algorithms and Applications},
+  year={2024},
+  month={May},
+  pages={149–178},
+  injournal={true},
+  bibtex_show={true},
+  abbr={JGAA},
+  website={https://jgaa.info/index.php/jgaa/article/view/2932},
+  selected={true},
+  pdf={baudin2024faster.pdf},
+  slides={baudin2024faster-slides.pdf},
+  code={https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
+  abstract={ Link streams offer a good model for representing interactions over time. They consist of links (b,e,u,v), where u and v are vertices interacting during the whole time interval [b,e]. In this paper, we deal with the problem of enumerating maximal cliques in link streams. A clique is a pair (C, [t0,t1]), where C is a set of vertices that all interact pairwise during the full interval [t0,t1]. It is maximal when neither its set of vertices nor its time interval can be increased.   Some main works solving this problem are based on the famous Bron-Kerbosch algorithm for enumerating maximal cliques in graphs.   We take this idea as a starting point to propose a new algorithm which matches the cliques of the instantaneous graphs formed by links existing at a given time t to the maximal cliques of the link stream.   We prove its correctness and compute its complexity, which is better than the state-of-the art ones in many cases of interest. We also study the output-sensitive complexity, which is close to the output size, thereby showing that our algorithm is efficient. To confirm this, we perform experiments on link streams used in the state of the art, and on massive link streams, up to 100 million links.   In all cases our algorithm is faster, mostly by a factor of at least 10 and up to a factor of 10^4. Moreover, it scales to massive link streams for which the existing algorithms are not able to provide the solution. }
+}
 
 @article{zea2021assessing,
   title={Assessing conservation of alternative splicing with evolutionary splicing graphs},
@@ -183,6 +76,119 @@ partitions, computing the minimal control on the projection of the attractors to
 then composing the results to obtain Cmin for the whole network. We implement our method and
 test it on various real-life biological networks to demonstrate its applicability and efficiency.}
 }
+
+
+
+% ===========================
+% ---- Prépublications ---- %
+% ===========================
+
+@article{baudin2024simpler,
+  title={A simpler, faster algorithm for enumerating maximal bicliques in large sparse bipartite graphs},
+  author={Baudin, Alexis and Magnien, Cl{\'e}mence and Tabourier, Lionel},
+  journal={arXiv preprint arXiv:2405.04428},
+  year={2024},
+  month = {May},
+  keywords={preprint},
+  abbr={Arxiv},
+  website={https://arxiv.org/abs/2405.04428},
+  pdf={baudin2024simpler.pdf},
+  bibtex_show = {true},
+  selected = {true},
+  code = {https://gitlab.lip6.fr/baudin/bbk},
+  preprint={true},
+  abstract={Bipartite graphs are a prevalent modeling tool for real-world networks, capturing interactions between vertices of two different types. Within this framework, bicliques emerge as crucial structures when studying dense subgraphs: they are sets of vertices such that all vertices of the first type interact with all vertices of the second type. Therefore, they allow identifying groups of closely related vertices of the network, such as individuals with similar interests or webpages with similar contents. This article introduces a new algorithm designed for the exhaustive enumeration of maximal bicliques within a bipartite graph. This algorithm, called BBK for Bipartite Bron-Kerbosch, is a new extension to the bipartite case of the Bron-Kerbosch algorithm, which enumerates the maximal cliques in standard (non-bipartite) graphs. It is faster than the state-of-the-art algorithms and allows the enumeration on massive bipartite graphs that are not manageable with existing implementations. We analyze it theoretically to establish two complexity formulas: one as a function of the input and one as a function of the output characteristics of the algorithm. We also provide an open-access implementation of BBK in C++, which we use to experiment and validate its efficiency on massive real-world datasets and show that its execution time is shorter in practice than state-of-the art algorithms. These experiments also show that the order in which the vertices are processed, as well as the choice of one of the two types of vertices on which to initiate the enumeration have an impact on the computation time. 
+  }
+}
+
+
+% ===========================
+% ---- Manuscrit thèse ---- %
+% ===========================
+
+@phdthesis{baudin2023cliques,
+  title={Cliques statiques et temporelles: algorithmes d'{\'e}num{\'e}ration et de d{\'e}tection de communaut{\'e}s},
+  author={Baudin, Alexis},
+  year={2023},
+  month=December,
+  school={Sorbonne Universit{\'e}},
+  bibtex_show = {true},
+  phdmanuscript={true},
+  abbr={Theses},
+  website={https://theses.fr/2023SORUS609},
+  pdf={140891_BAUDIN_2023_archivage.pdf},
+  slides={soutenance.pdf},
+  selected = {true},
+  abstract={Les graphes sont des objets mathématiques qui permettent de modéliser des interactions ou connexions entre entités de types variés. Un graphe peut représenter par exemple un réseau social qui connecte les utilisateurs entre eux, un réseau de transport comme le métro où les stations sont connectées entre elles, ou encore un cerveau avec les milliards de neurones en interaction qu'il contient. Depuis quelques années, la forte dynamicité de ces structures a été mise en évidence, ainsi que l'importance de prendre en compte l'évolution temporelle de ces réseaux pour en comprendre le fonctionnement. Alors que de nombreux concepts et algorithmes ont été développés sur les graphes pour décrire des structures de réseaux statiques, il reste encore beaucoup à faire pour formaliser et développer des algorithmes pertinents pour décrire la dynamique des réseaux réels. Cette thèse vise à mieux comprendre comment sont structurés les graphes massifs qui sont issus du monde réel et à développer des outils pour étendre notre compréhension à des structures évoluant dans le temps. Il a été montré que ces graphes ont des propriétés particulières, qui les distinguent des graphes théoriques ou tirés aléatoirement. Exploiter ces propriétés permet alors de concevoir des algorithmes pour résoudre certains problèmes difficiles beaucoup plus rapidement sur ces instances que dans le cas général. La thèse se focalise sur les cliques, qui sont des groupes d'éléments tous connectés entre eux. Nous étudions l'énumération des cliques dans les graphes statiques et temporels et la détection de communautés qu'elles permettent de mettre en œuvre. Les communautés d'un graphe sont des ensembles de sommets tels qu'au sein d'une communauté, les sommets interagissent fortement entre eux, et peu avec le reste du graphe. Leur étude aide à comprendre les propriétés structurelles et fonctionnelles des réseaux. Nous évaluons nos algorithmes sur des graphes massifs issus du monde réel, ouvrant ainsi de nouvelles perspectives pour comprendre les interactions au sein de ces réseaux. Nous travaillons d'abord sur des graphes, sans tenir compte de la composante temporelle des interactions. Nous commençons par utiliser la méthode de détection de communautés par percolation de cliques, en mettant en évidence ses limites en mémoire, qui empêchent de l'appliquer à des graphes trop massifs. En introduisant un algorithme de résolution approchée du problème, nous dépassons cette limite. Puis, nous améliorons l'énumération des cliques maximales dans le cas des graphes particuliers dits bipartis. Ils correspondent à des interactions entre des groupes de sommets de type différent, par exemple des liens entre des personnes et du contenu consulté, la participation à des événements, etc. Ensuite, nous considérons des interactions qui ont lieu au cours du temps, grâce au formalisme des flots de liens. Nous cherchons à étendre les algorithmes présentés en première partie, pour exploiter leurs avantages dans l'étude des interactions temporelles. Nous fournissons un nouvel algorithme d'énumération des cliques maximales dans les flots de liens, beaucoup plus efficace que l'état de l'art sur des jeux de données massifs. Enfin, nous nous intéressons aux communautés dans les flots de liens par percolation de cliques, en développant une extension de la méthode utilisée sur les graphes. Les résultats montrent une amélioration significative par rapport à l'état de l'art, et nous analysons les communautés obtenues pour fournir des informations pertinentes sur l'organisation des interactions temporelles dans les flots de liens. Mon travail de thèse a permis d’apporter de nouvelles réflexions sur l’étude des réseaux massifs issus du monde réel. Cela montre l'importance d'explorer le potentiel des graphes dans un contexte réel, et pourrait contribuer à l'émergence de solutions novatrices pour les défis complexes de notre société moderne.}
+}
+
+% =======================================
+% ---- Conférences internationales ---- %
+% =======================================
+
+@inproceedings{baudin2023lscpm,
+  title={LSCPM: communities in massive real-world Link Streams by Clique Percolation Method},
+  author={Baudin, Alexis and Tabourier, Lionel and Magnien, Cl{\'e}mence},
+  booktitle={30th International Symposium on Temporal Representation and Reasoning, TIME 2023},
+  year={2023},
+  month = September,
+  abbr = {TIME 2023},
+  bibtex_show = {true},
+  website = {https://arxiv.org/abs/2308.10801},
+  pdf = {baudin2023lscpm.pdf},
+  inconf = {true},
+  code = {https://gitlab.lip6.fr/baudin/lscpm},
+  slides= {Alexis-Baudin-LSCPM.pdf},
+  abstract = {Community detection is a popular approach to understand the organization of interactions in static networks. For that purpose, the Clique Percolation Method (CPM), which involves the percolation of k-cliques, is a well-studied technique that offers several advantages. Besides, studying interactions that occur over time is useful in various contexts, which can be modeled by the link stream formalism. The Dynamic Clique Percolation Method (DCPM) has been proposed for extending CPM to temporal networks.
+However, existing implementations are unable to handle massive datasets. We present a novel algorithm that adapts CPM to link streams, which has the advantage that it allows us to speed up the computation time with respect to the existing DCPM method. We evaluate it experimentally on real datasets and show that it scales to massive link streams. For example, it allows to obtain a complete set of communities in under twenty-five minutes for a dataset with thirty million links, what the state of the art fails to achieve even after a week of computation. We further show that our method provides communities similar to DCPM, but slightly more aggregated. We exhibit the relevance of the obtained communities in real world cases, and show that they provide information on the importance of vertices in the link streams. }
+}
+
+@inproceedings{baudin2022clique,
+  title={Clique percolation method: memory efficient almost exact communities},
+  author={Baudin, Alexis and Danisch, Maximilien and Kirgizov, Sergey and Magnien, Cl{\'e}mence and Ghanem, Marwan},
+  booktitle={Advanced Data Mining and Applications: 17th International Conference, ADMA 2021, Sydney, NSW, Australia, February 2--4, 2022, Proceedings, Part II},
+  pages={113--127},
+  year={2022},
+  organization={Springer},
+  poster={poster-CPM.pdf},
+  slides={slides-CPM.pdf},
+  abbr = {ADMA 2021},
+  bibtex_show = {true},
+  website = {https://arxiv.org/abs/2110.01213},
+  pdf={baudin2021clique.pdf},
+  selected = {false},
+  inconf = {true},
+  supp={https://gitlab.lip6.fr/baudin/cpm-supplementary-material},
+  code={https://gitlab.lip6.fr/baudin/cpm-cpmz},
+  abstract = {Automatic detection of relevant groups of nodes in large real-world graphs, i.e. community detection, has applications in many fields and has received a lot of attention in the last twenty years. The most popular method designed to find overlapping communities (where a node can belong to several communities) is perhaps the clique percolation method (CPM). This method formalizes the notion of community as a maximal union of k-cliques that can be reached from each other through a series of adjacent k-cliques, where two cliques are adjacent if and only if they overlap on k−1 nodes. Despite much effort CPM has not been scalable to large graphs for medium values of k.
+Recent work has shown that it is possible to efficiently list all k-cliques in very large real-world graphs for medium values of k. We build on top of this work and scale up CPM. In cases where this first algorithm faces memory limitations, we propose another algorithm, CPMZ, that provides a solution close to the exact one, using more time but less memory. 
+  }
+}
+
+
+% ====================================
+% ---- Conférences francophones ---- %
+% ====================================
+
+@inproceedings{baudin2023enumeration,
+  author    = {Alexis Baudin and Clémence Magnien and Lionel Tabourier},
+  title     = {Énumération efficace des cliques maximales dans les flots de liens réels massifs},
+  booktitle = {Extraction et Gestion des Connaissances, EGC 2023},
+  volume = {Extraction et Gestion des Connaissances, RNTI-E-39},
+  year      = {2023},
+  pages     = {139-150},
+  month = Jan,
+  bibtex_show = {true},
+  website={https://editions-rnti.fr/?inprocid=1002817},
+  pdf={baudin2023enumeration.pdf},
+  slides={slides-CliquesMaxLS.pdf},
+  selected = {false},
+  frconf = {true},
+  abbr = {EGC 2023},
+  code={https://gitlab.lip6.fr/baudin/maxcliques-linkstream},
+  abstract ={Les flots de liens offrent un formalisme de description d'interactions au cours du temps. Un lien correspond à deux sommets qui interagissent sur un intervalle de temps. Une clique est un ensemble de sommets associé à un intervalle de temps durant lequel ils sont tous connectés. Elle est maximale si ni son ensemble de sommets ni son intervalle de temps ne peuvent être augmentés. Les algorithmes existants pour énumérer ces structures ne permettent pas de traiter des jeux de données réels de plus de quelques centaines de milliers d'interactions. Or, l'accès à des données toujours plus massives demande d'adapter les outils à de plus grandes échelles. Nous proposons alors un algorithme qui énumère les cliques maximales sur des réseaux temporels réels et massifs atteignant jusqu'à plus de 100 millions de liens. Nous montrons expérimentalement qu'il améliore l'état de l'art de plusieurs ordres de grandeur. }
+}
+
 
 
 

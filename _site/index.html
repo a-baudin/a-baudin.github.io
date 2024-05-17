@@ -160,6 +160,68 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#ca7345"><a href="https://jgaa.info/index.php/jgaa" rel="external nofollow noopener" target="_blank">JGAA</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="baudin2024faster" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Faster maximal clique enumeration in large real-world link streams</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Alexis Baudin</em>, <a href="https://lip6.fr/Clemence.Magnien/" rel="external nofollow noopener" target="_blank">Clémence Magnien</a>, and <a href="https://lioneltabourier.fr/" rel="external nofollow noopener" target="_blank">Lionel Tabourier</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>Journal of Graph Algorithms and Applications</em>, May 2024
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/baudin2024faster.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://gitlab.lip6.fr/baudin/maxcliques-linkstream" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="/assets/pdf/baudin2024faster-slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+            <a href="https://jgaa.info/index.php/jgaa/article/view/2932" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-doi="10.7155/jgaa.v28i1.2932" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="__dimensions_badge_embed__" data-doi="10.7155/jgaa.v28i1.2932" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p> Link streams offer a good model for representing interactions over time. They consist of links (b,e,u,v), where u and v are vertices interacting during the whole time interval [b,e]. In this paper, we deal with the problem of enumerating maximal cliques in link streams. A clique is a pair (C, [t0,t1]), where C is a set of vertices that all interact pairwise during the full interval [t0,t1]. It is maximal when neither its set of vertices nor its time interval can be increased.   Some main works solving this problem are based on the famous Bron-Kerbosch algorithm for enumerating maximal cliques in graphs.   We take this idea as a starting point to propose a new algorithm which matches the cliques of the instantaneous graphs formed by links existing at a given time t to the maximal cliques of the link stream.   We prove its correctness and compute its complexity, which is better than the state-of-the art ones in many cases of interest. We also study the output-sensitive complexity, which is close to the output size, thereby showing that our algorithm is efficient. To confirm this, we perform experiments on link streams used in the state of the art, and on massive link streams, up to 100 million links.   In all cases our algorithm is faster, mostly by a factor of at least 10 and up to a factor of 10^4. Moreover, it scales to massive link streams for which the existing algorithms are not able to provide the solution. </p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">baudin2024faster</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Faster maximal clique enumeration in large real-world link streams}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Baudin, Alexis and Magnien, Clémence and Tabourier, Lionel}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{28}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.7155/jgaa.v28i1.2932}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Journal of Graph Algorithms and Applications}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">may</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{149–178}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
         <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#b31b1b"><a href="https://arxiv.org/" rel="external nofollow noopener" target="_blank">Arxiv</a></abbr></div>
 
         <!-- Entry bib key -->
@@ -266,65 +328,6 @@
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">month</span> <span class="p">=</span> <span class="nv">dec</span><span class="p">,</span>
   <span class="na">school</span> <span class="p">=</span> <span class="s">{Sorbonne Universit{\'e}}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-          </div>
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#7d1343"><a href="https://time-symposium.org/t/index.php" rel="external nofollow noopener" target="_blank">TIME 2023</a></abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="baudin2023lscpm" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">LSCPM: communities in massive real-world Link Streams by Clique Percolation Method</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        <em>Alexis Baudin</em>, <a href="https://lioneltabourier.fr/" rel="external nofollow noopener" target="_blank">Lionel Tabourier</a>, and <a href="https://lip6.fr/Clemence.Magnien/" rel="external nofollow noopener" target="_blank">Clémence Magnien</a>
-</div>
-
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>In 30th International Symposium on Temporal Representation and Reasoning, TIME 2023</em>, Sep 2023
-        </div>
-        <div class="periodical">
-          
-        </div>
-
-          <!-- Links/Buttons -->
-          <div class="links">
-            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
-            <a href="/assets/pdf/baudin2023lscpm.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
-            <a href="https://gitlab.lip6.fr/baudin/lscpm" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
-            <a href="/assets/pdf/Alexis-Baudin-LSCPM.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
-            <a href="https://arxiv.org/abs/2308.10801" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-altmetric-id="" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-            <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 6px;"></span>
-          </div>
-
-          <!-- Hidden abstract block -->
-          <div class="abstract hidden">
-            <p>Community detection is a popular approach to understand the organization of interactions in static networks. For that purpose, the Clique Percolation Method (CPM), which involves the percolation of k-cliques, is a well-studied technique that offers several advantages. Besides, studying interactions that occur over time is useful in various contexts, which can be modeled by the link stream formalism. The Dynamic Clique Percolation Method (DCPM) has been proposed for extending CPM to temporal networks.
-However, existing implementations are unable to handle massive datasets. We present a novel algorithm that adapts CPM to link streams, which has the advantage that it allows us to speed up the computation time with respect to the existing DCPM method. We evaluate it experimentally on real datasets and show that it scales to massive link streams. For example, it allows to obtain a complete set of communities in under twenty-five minutes for a dataset with thirty million links, what the state of the art fails to achieve even after a week of computation. We further show that our method provides communities similar to DCPM, but slightly more aggregated. We exhibit the relevance of the obtained communities in real world cases, and show that they provide information on the importance of vertices in the link streams. </p>
-          </div>
-<!-- Hidden bibtex block -->
-          <div class="bibtex hidden">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">baudin2023lscpm</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{LSCPM: communities in massive real-world Link Streams by Clique Percolation Method}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Baudin, Alexis and Tabourier, Lionel and Magnien, Cl{\'e}mence}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{30th International Symposium on Temporal Representation and Reasoning, TIME 2023}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">sep</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
           </div>
         </div>
